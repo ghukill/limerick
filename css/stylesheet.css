@@ -1,0 +1,30 @@
+.container {
+	max-width:960;	
+	margin-bottom:20px;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;	
+}
+
+#heading_div {
+	text-align:center;
+}
+
+#image_div{
+	text-align:center;
+}
+
+.row{
+	margin-top:20px;
+}
+
+.center-text{
+	text-align:center;
+}
+
+.vertical-container .row {
+    display: table;
+    width: 100%;
+}
+.vertical-container .row > .col-lg-6 {
+    display: table-cell;
+    vertical-align: middle;
+}
