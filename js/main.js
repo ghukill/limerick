@@ -1,11 +1,9 @@
 // global
 var limerickObj = {};
 
-
 // pubstore testing
 function sendLimerick(){
-
-	// grab inputs from form
+	
 	var limerick_input = $("#limerick_input").val();
 	var name_input = $("#name_input").val();
 	var email_input = $("#email_input").val();
@@ -21,8 +19,7 @@ function sendLimerick(){
 	}	
 
 	limerickArray.push(limerickObj);
-	var limerickJSON = JSON.stringify(limerickArray);
-	console.log(limerickObj);
+	var limerickJSON = JSON.stringify(limerickArray);	
 	
 	var dataObj = {
 		"functions[]" : "pubStore",		
@@ -34,19 +31,16 @@ function sendLimerick(){
 		url: "http://digital.library.wayne.edu/WSUAPI-dev",
 		data:dataObj,
 		context: document.body
-	}).done(function(response) {
-		console.log(response);		
+	}).done(function(response) {			
 		displaySubmittedLimerick(limerickObj);
-	}).fail(function(response){
-		console.log(response);
+	}).fail(function(response){		
 		alert("There was an error.");
 	});
 }
 
 
 function displaySubmittedLimerick(limerickObj){
-	$("#input_section").hide();
-	// prepare carriage returns
+	$("#input_section").hide();	
 	var text = limerickObj.limerick_txt.replace(/(\r\n|\n|\r)/g,"<br />");
 	$("#limerick_text_display").html(text);	
 	$("#display_section").fadeIn();
@@ -63,8 +57,7 @@ function viewSubmission(limerick_id){
 		"sort":"last_modified_dt desc"
 	}	
 	
-	var searchJSON = JSON.stringify(searchObj);
-	console.log(searchJSON);
+	var searchJSON = JSON.stringify(searchObj);	
 	
 	var dataObj = {
 		"functions[]" : "pubStore",		
@@ -76,23 +69,17 @@ function viewSubmission(limerick_id){
 		url: "http://digital.library.wayne.edu/WSUAPI-dev",
 		data:dataObj,
 		context: document.body
-	}).done(function(response) {
-		console.log(response);		
+	}).done(function(response) {		
 		limeHand = response.pubStore.response.docs;
 		// display limerick as tiles
 		$("#display_section").fadeIn();		
-		for (var i=0; i<limeHand.length; i++){			
-			console.log(limeHand[i].email_s);
+		for (var i=0; i<limeHand.length; i++){						
 			var text = limeHand[i].limerick_txt[0].replace(/(\r\n|\n|\r)/g,"<br />");			
 			var html_string = '<div class="col-md-4"><h4 id="limerick_text_display">'+text+'</h4><p><span style="font-size:14px; color:gray;"><em>'+limeHand[i].name_s+'</em></span></p></div>'			
-			$("#limerick_results").append(html_string);
-			if ( i && (i % 3 === 0)) {
-				console.log('firing third');
-			}
+			$("#limerick_results").append(html_string);			
 		}			
-	}).fail(function(response){
-		console.log(response);
-		alert("There was an error.");
+	}).fail(function(response){		
+		alert("There was an error submitting your limerick.  Please try again.");
 	});
 
 }
