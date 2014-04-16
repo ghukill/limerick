@@ -6,13 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Limerick Challenge 2014 - Wayne State University Library</title>
 
-
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 		<!-- Bootstrap -->
 		<link href="inc/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Local CSS -->
 		<link href="css/stylesheet.css" rel="stylesheet">
+
+		<!-- Local JS -->
+		<script src="js/main.js" type="text/javascript"></script>
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,30 +58,44 @@
 
 				<!-- limerick input -->				
 				<div class="row">
-					<div class="col-md-4 col-md-offset-3" style="padding-right:25px; border-right: 1px solid #ccc;">                  
-						<form role="form">
-						  <div class="form-group">					    
-						    <textarea class="form-control" rows="5" placeholder="Enter limerick"></textarea>
-						  </div>					  
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">Name</label>
-						    <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">Email</label>
-						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-						  </div>
-						  
-						  <button type="submit" class="btn btn-default">Submit</button>
-						</form>
+					<div class="col-md-4 col-md-offset-3" style="padding-right:25px; border-right: 1px solid #ccc;">
+						<div id="form_container">						                  
+							<form id="limerick_form" role="form" onsubmit="sendLimerick(); return false;">
+							  <div class="form-group">					    
+							    <textarea class="form-control" id="limerick_input" name="limerick_input" rows="5" placeholder="Enter limerick"></textarea>
+							  </div>					  
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Name</label>
+							    <input type="name" class="form-control" id="name_input" placeholder="Enter name" value="graham hukill">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Email</label>
+							    <input type="email" class="form-control" id="email_input" placeholder="Enter email" value="graham@hukill.com">
+							  </div>						  
+							  <button type="submit" class="btn btn-default">Submit</button>
+							</form>
+						</div>
 					</div>
 					<div class="col-md-2 center-text">                  
-						<button type="button" class="btn btn-default btn-lg">View Limericks!</button>
+						<button type="button" class="btn btn-default btn-lg">View All Submissions!</button>
 					</div>
 				</div>
 
 
 			</div> <!--close input-->
+
+			<div id="display_section">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">                  
+						<h3 id="limerick_text_display"><pre></pre></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-md-offset-5 center-text">                  
+						<button type="button" class="btn btn-default btn-lg">View All Submissions!</button>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
@@ -86,8 +104,7 @@
 
 
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
 	</body>

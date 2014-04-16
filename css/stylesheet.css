@@ -4,6 +4,10 @@
 	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;	
 }
 
+#display_section{
+	display:none;
+}
+
 #heading_div {
 	text-align:center;
 }
