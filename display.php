@@ -32,8 +32,9 @@
 			<!-- title -->
 			<div class="row">
 				<div id="heading_div" class="col-md-8 col-md-offset-2 center-text">      
-					<h1>Limerick Challenge 2014</h1>
-					<h3>Wayne State University Libraries</h3>					
+					<a href="./">
+						<h1>Limerick Challenge 2014 - Wayne State University Libraries</h1>					
+					</a>				
 				</div>
 			</div>
 
@@ -49,16 +50,7 @@
 			</div>			
 
 			<div id="display_section">
-				<div id="limerick_results" class="row">
-					<!-- <div class="col-md-4">                  
-						<button type="button" class="btn btn-default btn-lg">Previous</button>
-					</div>
-					<div class="col-md-4">                  
-						<h3 id="limerick_text_display"></h3>						
-					</div>
-					<div class="col-md-4">                  
-						<button type="button" class="btn btn-default btn-lg">Next</button>
-					</div> -->
+				<div id="limerick_results" class="row">					
 					<script type="text/javascript">							
 						viewSubmission();
 					</script>

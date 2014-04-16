@@ -32,8 +32,9 @@
 			<!-- title -->
 			<div class="row">
 				<div id="heading_div" class="col-md-8 col-md-offset-2 center-text">      
-					<h1>Limerick Challenge 2014</h1>
-					<h3>Wayne State University Libraries</h3>					
+					<a href="./">
+						<h1>Limerick Challenge 2014 - Wayne State University Libraries</h1>						
+					</a>
 				</div>
 			</div>
 
@@ -51,8 +52,12 @@
 			<div id="input_section">
 				<!-- instruction -->
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 center-text">                  
-						<p>Here is a whole bunch of text about a) why we're doing this, b) how to enter, and c) how to view others.</p>
+					<div class="col-md-8 col-md-offset-2">                  
+						<p>In honor of <a href="http://www.ala.org/alcts/confevents/preswk">Preservation Week (April 27-May 3)</a>, the closing of <a href="http://www.poets.org/npm/">National Poetry month (April)</a>, and the soon launch of our new digital collections front-end, the Library System is hosting a limerick writing contest.  We invite you to compose and submit a limerick about the digital image shown above. The limerick form is a familiar one to most of us but there are specific rhyming requirements.</p>
+						<p>To see more information on the limerick, consult our online reference work, The <a href="http://proxy.lib.wayne.edu/login?url=http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-655">Oxford Dictionary of Literary Terms for a defition of the limerick poem</a>.  For more inspiration, you might also consult the <a href="http://www.oedilf.com/db/Lim.php">OEDILF (The Omnificent English Dictionary in Limerick Form)</a>.</p>
+						<p><strong>Submission deadline is Friday, April 25 at 5:00 PM.  Each submission is tied to an email address; revisions may be made to your limerick by using the same email address.</strong></p>
+						<p>The winner will be recognized during Preservation Week and will receive a Starbucks gift card.</p>
+						<p>Baldick, Chris. "limerick." The Oxford Dictionary of Literary Terms. : Oxford University Press, 2008. Oxford Reference. 2008. Date Accessed 10 Apr. 2014 <http://proxy.lib.wayne.edu/login?url=http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-655>.</p>
 					</div>
 				</div>
 
@@ -66,18 +71,18 @@
 							  </div>					  
 							  <div class="form-group">
 							    <label for="exampleInputEmail1">Name</label>
-							    <input type="name" class="form-control" id="name_input" placeholder="Enter name" value="graham hukill">
+							    <input type="name" class="form-control" id="name_input" placeholder="Enter name">
 							  </div>
 							  <div class="form-group">
 							    <label for="exampleInputEmail1">Email</label>
-							    <input type="email" class="form-control" id="email_input" placeholder="Enter email" value="graham@hukill.com">
+							    <input type="email" class="form-control" id="email_input" placeholder="Enter email">
 							  </div>						  
 							  <button type="submit" class="btn btn-default">Submit</button>
 							</form>
 						</div>
 					</div>
 					<div class="col-md-2 center-text">                  
-						<button type="button" class="btn btn-default btn-lg">View All Submissions!</button>
+						<a href="display.php"><button type="button" class="btn btn-default btn-lg">View All Submissions!</button></a>
 					</div>
 				</div>
 
@@ -91,8 +96,13 @@
 					</div>
 				</div>
 				<div class="row">
+					<div class="col-md-4 col-md-offset-4">                  
+						<p>(Not happy with it?  Each limerick is tied to an email address; revisions may be made to your limerick by using the same email address.)</p>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-md-2 col-md-offset-5 center-text">                  
-						<button type="button" class="btn btn-default btn-lg">View All Submissions!</button>
+						<a href="display.php"><button type="button" class="btn btn-default btn-lg">View All Submissions!</button></a>
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,9 @@ function sendLimerick(){
 		"id":email_input,
 		"name_s":name_input,
 		"email_s":email_input,
-		"limerick_txt":limerick_input
+		"limerick_txt":limerick_input,
+		"namespace_s":"limerick_challenge_2014",
+		"last_modified_dt":"NOW"
 	}	
 
 	limerickArray.push(limerickObj);
@@ -57,7 +59,8 @@ function viewSubmission(limerick_id){
 		"q":"id:*",		
 		"rows":1000,
 		"wt":"json",
-		"fq":"limerick_txt:*" // ensures limerick_txt exists
+		"fq":"limerick_txt:*", // ensures limerick_txt exists
+		"sort":"last_modified_dt desc"
 	}	
 	
 	var searchJSON = JSON.stringify(searchObj);
@@ -78,15 +81,14 @@ function viewSubmission(limerick_id){
 		limeHand = response.pubStore.response.docs;
 		// display limerick as tiles
 		$("#display_section").fadeIn();		
-		for (var i=0; i<limeHand.length; i = i+3){
-			console.log(limeHand[i].email_s);			
-			// prepare carriage returns
-			var text = limeHand[i].limerick_txt[0].replace(/(\r\n|\n|\r)/g,"<br />");
-			var text1 = limeHand[i+1].limerick_txt[0].replace(/(\r\n|\n|\r)/g,"<br />");
-			var text2 = limeHand[i+2].limerick_txt[0].replace(/(\r\n|\n|\r)/g,"<br />");
-			var html_string = '<div id="row"><div class="col-md-4"><h3 id="limerick_text_display">'+text+'</h3></div><div class="col-md-4"><h3 id="limerick_text_display">'+text1+'</h3></div><div class="col-md-4"><h3 id="limerick_text_display">'+text2+'</h3></div></div>'
-			console.log(html_string);
+		for (var i=0; i<limeHand.length; i++){			
+			console.log(limeHand[i].email_s);
+			var text = limeHand[i].limerick_txt[0].replace(/(\r\n|\n|\r)/g,"<br />");			
+			var html_string = '<div class="col-md-4"><h4 id="limerick_text_display">'+text+'</h4><p><span style="font-size:14px; color:gray;"><em>'+limeHand[i].name_s+'</em></span></p></div>'			
 			$("#limerick_results").append(html_string);
+			if ( i && (i % 3 === 0)) {
+				console.log('firing third');
+			}
 		}			
 	}).fail(function(response){
 		console.log(response);
