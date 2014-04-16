@@ -87,7 +87,7 @@
 			<div id="display_section">
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4">                  
-						<h3 id="limerick_text_display"><pre></pre></h3>
+						<h3 id="limerick_text_display"></h3>
 					</div>
 				</div>
 				<div class="row">
@@ -98,12 +98,6 @@
 			</div>
 
 		</div>
-
-
-
-
-
-
 		
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
