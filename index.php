@@ -53,11 +53,11 @@
 				<!-- instruction -->
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">                  
-						<p>In honor of <a href="http://www.ala.org/alcts/confevents/preswk">Preservation Week (April 27-May 3)</a>, the closing of <a href="http://www.poets.org/npm/">National Poetry month (April)</a>, and the soon launch of our new digital collections front-end, the Library System is hosting a limerick writing contest.  We invite you to compose and submit a limerick about the digital image shown above. The limerick form is a familiar one to most of us but there are specific rhyming requirements.</p>
-						<p>To see more information on the limerick, consult our online reference work, The <a href="http://proxy.lib.wayne.edu/login?url=http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-655">Oxford Dictionary of Literary Terms for a defition of the limerick poem</a>.  For more inspiration, you might also consult the <a href="http://www.oedilf.com/db/Lim.php">OEDILF (The Omnificent English Dictionary in Limerick Form)</a>.</p>
-						<p><strong>Submission deadline is Friday, April 25 at 5:00 PM.  Each submission is tied to an email address; revisions may be made to your limerick by using the same email address.</strong></p>
-						<p>The winner will be recognized during Preservation Week and will receive a Starbucks gift card.</p>
-						<p>Baldick, Chris. "limerick." The Oxford Dictionary of Literary Terms. : Oxford University Press, 2008. Oxford Reference. 2008. Date Accessed 10 Apr. 2014 <http://proxy.lib.wayne.edu/login?url=http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-655>.</p>
+						<h4>In honor of <a href="http://www.ala.org/alcts/confevents/preswk">Preservation Week (April 27-May 3)</a>, the closing of <a href="http://www.poets.org/npm/">National Poetry month (April)</a>, and the soon launch of our new digital collections front-end, the Library System is hosting a limerick writing contest.  We invite you to compose and submit a limerick about the digital image shown above. The limerick form is a familiar one to most of us but there are specific rhyming requirements.</h4>
+						<h4>To see more information on the limerick, consult our online reference work, The <a href="http://proxy.lib.wayne.edu/login?url=http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-655">Oxford Dictionary of Literary Terms</a> (1).  For more inspiration, you might also consult the <a href="http://www.oedilf.com/db/Lim.php">OEDILF (The Omnificent English Dictionary in Limerick Form)</a>.</h4>
+						<h4><strong>Submission deadline is Friday, April 25 at 5:00 PM.  Each submission is tied to an email address; revisions may be made to your limerick by using the same email address and submitting again.</strong></h4>
+						<h4>The winner will be recognized during Preservation Week and will receive a Starbucks gift card.</h4>
+						<h4>(1) Baldick, Chris. "limerick." The Oxford Dictionary of Literary Terms. : Oxford University Press, 2008. Oxford Reference. 2008. Date Accessed 10 Apr. 2014 <http://proxy.lib.wayne.edu/login?url=http://www.oxfordreference.com/view/10.1093/acref/9780199208272.001.0001/acref-9780199208272-e-655>.</h4>
 					</div>
 				</div>
 
@@ -97,7 +97,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4">                  
-						<p>(Not happy with it?  Each limerick is tied to an email address; revisions may be made to your limerick by using the same email address.)</p>
+						<p>(Not happy with it?  Each limerick is tied to an email address; revisions may be made to your limerick by using the same email address and submitting again.)</p>
 					</div>
 				</div>
 				<div class="row">
